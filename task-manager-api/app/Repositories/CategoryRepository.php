@@ -27,3 +27,5 @@ class CategoryRepository extends BaseRepository
         return $this->model->where('name', 'like', "%{$term}%")->get();
     }
 }
+
+

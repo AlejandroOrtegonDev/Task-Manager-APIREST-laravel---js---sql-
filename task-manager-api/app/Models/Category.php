@@ -19,3 +19,5 @@ class Category extends Model
         'updated_at' => 'datetime',
     ];
 }
+
+

@@ -5,6 +5,7 @@ namespace App\Repositories;
 use Illuminate\Database\Eloquent\Model;
 
 class BaseRepository implements RepositoryInterface
+
 {
     protected $model;
 
@@ -55,3 +56,5 @@ class BaseRepository implements RepositoryInterface
         return $this->find($id)->delete();
     }
 }
+
+

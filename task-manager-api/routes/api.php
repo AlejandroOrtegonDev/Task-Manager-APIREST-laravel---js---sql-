@@ -15,9 +15,21 @@ use App\Http\Controllers\CategoryController;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
-});
 
-// Category routes
-Route::apiResource('categories', CategoryController::class);
+Route::middleware('auth:sanctum')->group(function () {
+    Route::get('/task', function () {
+        return 'task list';
+    });
+
+    Route::post('/task', function (Request $request) {
+        return 'Hello World';
+    });
+
+    Route::put('/task/{id}', function (Request $request, $id) {
+        return "Update task $id";
+    });
+
+    Route::delete('/task/{id}', function ($id) {
+        return "Delete task $id";
+    });
+});

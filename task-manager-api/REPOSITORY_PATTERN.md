@@ -179,3 +179,5 @@ php artisan migrate
 - Facilita el testing unitario
 - Permite cambiar fácilmente de ORM si es necesario
 - Mantén la lógica de negocio simple en los repositorios
+
+
